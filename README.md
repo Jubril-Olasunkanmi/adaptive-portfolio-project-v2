@@ -156,3 +156,11 @@ The system automatically exports:
 
 ```text
 outputs/charts/01_growth_of_1.png
+
+
+## Drawdown Comparison
+
+This chart shows the percentage decline of each portfolio from its previous peak over time. Lower and shallower drawdowns indicate better downside protection.
+
+![Drawdown Comparison](outputs/charts/02_drawdown_comparison.png)
+
