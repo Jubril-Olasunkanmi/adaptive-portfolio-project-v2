@@ -182,3 +182,69 @@ This chart shows the percentage decline of each portfolio from its previous peak
 
 
 ![Yearly Allocation](outputs/charts/07_yearly_weight_labels.png)
+
+
+
+
+
+# Performance Charts
+
+## Growth of $1
+
+![Growth of $1](outputs/charts/01_growth_of_1.png)
+
+---
+
+## Drawdown Comparison
+
+![Drawdown Comparison](outputs/charts/02_drawdown_comparison.png)
+
+---
+
+## Rolling Sharpe Ratio
+
+![Rolling Sharpe](outputs/charts/03_rolling_sharpe.png)
+
+---
+
+## Market Regime Timeline
+
+![Regime Timeline](outputs/charts/04_regime_timeline.png)
+
+---
+
+## Portfolio Weights Through Time
+
+![Portfolio Weights](outputs/charts/05_portfolio_weights.png)
+
+---
+
+## Regime-Colored Growth
+
+![Regime Growth](outputs/charts/06_regime_colored_growth.png)
+
+---
+
+## Average Allocation by Year
+
+![Yearly Allocation](outputs/charts/07_yearly_weight_labels.png)
+
+---
+
+# Strategy Logic
+
+- Detect market regime  
+- Apply momentum tilts  
+- Use volatility targeting  
+- Shift between growth and defensive assets  
+- Rebalance dynamically
+
+---
+
+# Installation
+
+```bash
+git clone https://github.com/Jubril-Olasunkanmi/adaptive-portfolio-project-v2.git
+cd adaptive-portfolio-project-v2
+pip install -r requirements.txt
+python run_project.py
