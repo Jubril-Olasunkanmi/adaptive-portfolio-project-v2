@@ -211,3 +211,72 @@ git clone https://github.com/Jubril-Olasunkanmi/adaptive-portfolio-project-v2.gi
 cd adaptive-portfolio-project-v2
 pip install -r requirements.txt
 python run_project.py
+```
+
+
+
+# Tech Stack
+
+- Python  
+- Pandas  
+- NumPy  
+- Scikit-learn  
+- Matplotlib  
+- Quantitative Portfolio Logic  
+- Backtesting Framework  
+
+---
+
+# Project Motivation
+
+This project was built to explore a core question:
+
+> Can adaptive portfolio construction outperform static allocation models under changing market conditions?
+
+The results suggest **yes**.
+
+---
+
+# Use Cases
+
+This framework is relevant for:
+
+- Asset Management  
+- Wealth Management  
+- Quant Research  
+- Robo-Advisory Platforms  
+- Multi-Asset Allocation  
+- Financial Engineering Research  
+
+---
+
+# Future Enhancements
+
+Planned institutional upgrades:
+
+- Walk-forward out-of-sample validation  
+- Hidden Markov regime engine  
+- Macro factor integration  
+- Transaction cost optimization  
+- Reinforcement learning allocator  
+- Tail-risk hedging overlay  
+- Live dashboard deployment  
+
+---
+
+# Author
+
+**Ammar Jubril**  
+Financial Engineering | Data Science | Quantitative Portfolio Research  
+
+GitHub: https://github.com/Jubril-Olasunkanmi
+
+---
+
+# Disclaimer
+
+This project is for research and educational purposes only.  
+
+Past performance does not guarantee future results.  
+
+**Not investment advice.**
