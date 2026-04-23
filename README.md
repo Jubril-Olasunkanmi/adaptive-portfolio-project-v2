@@ -164,3 +164,5 @@ This chart shows the percentage decline of each portfolio from its previous peak
 
 ![Drawdown Comparison](outputs/charts/02_drawdown_comparison.png)
 
+
+![Drawdown Comparison](outputs/charts/02_drawdown_comparison.png)
