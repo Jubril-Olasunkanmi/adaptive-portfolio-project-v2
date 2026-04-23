@@ -1,95 +1,158 @@
 # Adaptive Portfolio Project V2
-## Hybrid Regime + Momentum + Volatility-Targeting Portfolio Management System
 
-This is **Version 2** of the adaptive multi-asset portfolio project. It is built as a separate project so you can run it independently from Version 1 and compare:
+## Institutional-Grade Regime-Aware Multi-Asset Portfolio Strategy
 
-- cumulative growth,
-- drawdowns,
-- rolling Sharpe,
-- regime classification,
-- portfolio weights,
-- yearly asset allocation,
-- and final performance metrics.
+A quantitative portfolio management system designed to dynamically allocate capital across asset classes based on changing market conditions.
 
-## What changed from V1
+This project combines:
 
-Version 1 proved the framework. Version 2 is designed to be **more competitive and more realistic** by introducing:
+- Market regime detection  
+- Momentum tilts  
+- Trend filters  
+- Volatility targeting  
+- Dynamic rebalancing  
+- Multi-asset diversification  
+- Risk-adjusted performance optimization  
 
-1. a richer market-state model,
-2. tactical momentum overlays,
-3. trend filters,
-4. volatility targeting,
-5. smarter defensive behavior,
-6. weight smoothing to reduce whipsawing,
-7. stronger charting and reporting.
+Instead of relying on static allocations like the traditional 60/40 model, this framework adapts exposure across growth, defensive, and stress environments.
 
-## Main idea
+---
 
-The strategy does not rely on one static allocation rule. It combines:
+# Executive Summary
 
-- **regime detection** from market stress signals,
-- **cross-asset trend and momentum**,
-- **risk-aware optimization**,
-- **volatility targeting**,
-- **cash defense during stress**,
-- and **turnover-aware rebalancing**.
+Financial markets are not static.
 
-## Portfolio assets
+Correlations shift. Volatility clusters. Crises emerge. Bull markets accelerate.
 
-- SPY - US Equities
-- EFA - Developed ex-US Equities
-- EEM - Emerging Markets
-- TLT - Long-Term Bonds
-- IEF - Intermediate Bonds
-- GLD - Gold
-- DBC - Commodities
-- VNQ - Real Estate
-- BIL - Cash / T-Bills
+Traditional portfolios often fail to adapt quickly enough.
 
-## Signal assets
+This project was built to solve that problem through an adaptive investment framework that changes portfolio weights based on evolving market regimes.
 
-These are used for market condition inference, not necessarily as portfolio holdings:
-- ^VIX
-- HYG
-- LQD
+---
 
-## Core outputs
+# Key Backtest Results
 
-The project writes:
-- metrics table,
-- portfolio return history,
-- benchmark history,
-- regime summary,
-- chart pack,
-- yearly average weights.
+## Dynamic Portfolio V2
 
-## How to run
+| Metric | Result |
+|-------|-------:|
+| CAGR | **12.01%** |
+| Annualized Volatility | **7.56%** |
+| Sharpe Ratio | **1.28** |
+| Sortino Ratio | **2.44** |
+| Max Drawdown | **-9.75%** |
+| Calmar Ratio | **1.23** |
+| Hit Rate | **67.86%** |
 
-```bash
-pip install -r requirements.txt
-python run_project.py
-```
+---
 
-## Main charts produced
+# Benchmark Comparison
 
-Inside `outputs/charts/`:
-- `01_growth_of_1.png`
-- `02_drawdown_comparison.png`
-- `03_rolling_sharpe.png`
-- `04_regime_timeline.png`
-- `05_portfolio_weights.png`
-- `06_regime_colored_growth.png`
-- `07_yearly_weight_labels.png`
+| Strategy | CAGR | Sharpe | Max Drawdown |
+|---------|------:|------:|-------------:|
+| Dynamic Portfolio V2 | **12.01%** | **1.28** | **-9.75%** |
+| Equal Weight | 5.55% | 0.46 | -17.10% |
+| Static 60/40 | 9.60% | 0.86 | -20.51% |
+| SPY Buy & Hold | 14.86% | 0.93 | -23.93% |
 
-## Why this version should improve
+---
 
-Version 1 could lag strong bull markets because it was often too conservative. Version 2 explicitly tries to solve that by:
-- letting offensive assets carry more weight in calm-growth regimes,
-- using momentum tilts,
-- reducing exposure when an asset loses trend support,
-- dynamically scaling risk to a target volatility,
-- raising cash only when stress is truly elevated.
+# Why This Matters
 
-## Suggested CV bullet
+The strategy generated:
 
-Built a hybrid regime- and momentum-driven multi-asset portfolio allocation engine with volatility targeting, stress-aware cash overlays, turnover smoothing, and full benchmark backtesting, designed as an enhanced successor to an earlier adaptive portfolio framework.
+- Strong double-digit returns  
+- Excellent Sharpe ratio  
+- Low drawdowns  
+- Better downside control than passive equity exposure  
+- Better risk-adjusted performance than static benchmarks  
+
+This demonstrates how adaptive allocation can improve portfolio efficiency.
+
+---
+
+# Strategy Architecture
+
+## 1. Regime Detection
+
+Markets are classified into four states:
+
+- Calm Growth  
+- Volatile Growth  
+- Defensive / Uncertain  
+- Crisis / Stress  
+
+This allows the model to react differently depending on market behavior.
+
+---
+
+## 2. Allocation Engine
+
+Portfolio weights shift dynamically depending on regime:
+
+### Calm Growth
+Higher exposure to risk assets.
+
+### Volatile Growth
+Balanced participation with moderated risk.
+
+### Defensive / Uncertain
+Reduced concentration, broader diversification.
+
+### Crisis / Stress
+Capital preservation through defensive assets and cash bias.
+
+---
+
+## 3. Tactical Overlay
+
+Additional signals include:
+
+- Relative momentum  
+- Trend confirmation  
+- Volatility scaling  
+- Weight smoothing  
+
+---
+
+# Portfolio Universe
+
+Example asset universe includes:
+
+- US Equities  
+- Long-Term Bonds  
+- Gold  
+- Emerging Markets  
+- Real Estate  
+- Commodities  
+
+---
+
+# Generated Outputs
+
+The system automatically exports:
+
+## Performance Files
+
+- `outputs/portfolio_results.csv`
+- `outputs/benchmark_results.csv`
+- `outputs/metrics.csv`
+
+## Charts
+
+- Growth of $1
+- Drawdown Comparison
+- Rolling Sharpe Ratio
+- Regime Timeline
+- Portfolio Weights Through Time
+- Regime-Colored Growth Chart
+- Yearly Allocation Labels
+
+---
+
+# Example Charts
+
+## Growth of $1
+
+```text
+outputs/charts/01_growth_of_1.png
