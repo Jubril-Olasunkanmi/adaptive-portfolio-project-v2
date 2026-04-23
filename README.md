@@ -166,4 +166,19 @@ This chart shows the percentage decline of each portfolio from its previous peak
 ![Drawdown Comparison](outputs/charts/02_drawdown_comparison.png)
 
 
-![Drawdown Comparison](outputs/charts/02_drawdown_comparison.png)
+![Growth of $1](outputs/charts/01_growth_of_1.png)
+
+
+![Rolling Sharpe](outputs/charts/03_rolling_sharpe.png)
+
+
+![Regime Timeline](outputs/charts/04_regime_timeline.png)
+
+
+![Portfolio Weights](outputs/charts/05_portfolio_weights.png)
+
+
+![Regime Growth](outputs/charts/06_regime_colored_growth.png)
+
+
+![Yearly Allocation](outputs/charts/07_yearly_weight_labels.png)
